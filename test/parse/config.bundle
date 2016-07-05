@@ -1,0 +1,65 @@
+__weex_define__("@weex-component/config", function (__weex_require__, __weex_exports__, __weex_module__) {
+
+;
+  __weex_module__.exports = {
+    methods: {
+      gotoDetail: function () {
+        this.$openURL('https://item.taobao.com/item.htm?id=' + this.itemId)
+      }
+    }
+  }
+
+
+;__weex_module__.exports.style = __weex_module__.exports.style || {}
+;Object.assign(__weex_module__.exports.style, {
+  "thumb": {
+    "width": 200,
+    "height": 200
+  },
+  "title": {
+    "flex": 1,
+    "color": "#ff0000",
+    "fontSize": 48,
+    "fontWeight": "bold",
+    "backgroundColor": "#eeeeee"
+  }
+})
+
+;__weex_module__.exports.template = __weex_module__.exports.template || {}
+;Object.assign(__weex_module__.exports.template, {
+  "type": "container",
+  "style": {
+    "flexDirection": "column"
+  },
+  "children": [
+    {
+      "type": "container",
+      "repeat": function () {return this.itemList},
+      "events": {
+        "click": "gotoDetail"
+      },
+      "children": [
+        {
+          "type": "image",
+          "classList": [
+            "thumb"
+          ],
+          "attr": {
+            "src": function () {return this.pictureUrl}
+          }
+        },
+        {
+          "type": "text",
+          "classList": [
+            "title"
+          ],
+          "attr": {
+            "value": function () {return this.title}
+          }
+        }
+      ]
+    }
+  ]
+})
+
+;})

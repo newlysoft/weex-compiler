@@ -1,0 +1,19 @@
+__weex_define__("@weex-component/single", function (__weex_require__, __weex_exports__, __weex_module__) {
+
+;
+
+;__weex_module__.exports.style = __weex_module__.exports.style || {}
+;Object.assign(__weex_module__.exports.style, {})
+
+;__weex_module__.exports.template = __weex_module__.exports.template || {}
+;Object.assign(__weex_module__.exports.template, {
+  "type": "text",
+  "style": {
+    "color": "#FF0000"
+  },
+  "attr": {
+    "value": "Hello World"
+  }
+})
+
+;})

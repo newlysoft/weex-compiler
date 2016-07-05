@@ -1,0 +1,28 @@
+__weex_define__("@weex-component/element", function (__weex_require__, __weex_exports__, __weex_module__) {
+
+;
+  __weex_module__.exports = {
+    data: function () {return {
+      itemList: [
+        {itemId: '520421163634', title: '宝贝标题1', pictureUrl: 'https://gd2.alicdn.com/bao/uploaded/i2/T14H1LFwBcXXXXXXXX_!!0-item_pic.jpg'},
+        {itemId: '522076777462', title: '宝贝标题2', pictureUrl: 'https://gd1.alicdn.com/bao/uploaded/i1/TB1PXJCJFXXXXciXFXXXXXXXXXX_!!0-item_pic.jpg'}
+      ]
+    }}
+  }
+
+
+;__weex_module__.exports.style = __weex_module__.exports.style || {}
+;Object.assign(__weex_module__.exports.style, {})
+
+;__weex_module__.exports.template = __weex_module__.exports.template || {}
+;Object.assign(__weex_module__.exports.template, {
+  "type": "container",
+  "children": [
+    {
+      "type": "taobao-item",
+      "repeat": function () {return this.itemList}
+    }
+  ]
+})
+
+;})
